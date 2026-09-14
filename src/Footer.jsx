@@ -60,14 +60,43 @@ const Footer = () => {
                     <h3>FOLLOW US</h3>
 
                     <div className="social__icons">
-                        <a href="#" aria-label="Facebook"><FaFacebookF />
+
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook"
+                        >
+                            <FaFacebookF />
                         </a>
-                        <a href="#" aria-label="Instagram"><FaInstagram />
+
+                        <a
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                        >
+                            <FaInstagram />
                         </a>
-                        <a href="#" aria-label="Twitter"><FaXTwitter />
+
+                        <a
+                            href="https://x.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Twitter"
+                        >
+                            <FaXTwitter />
                         </a>
-                        <a href="#" aria-label="YouTube"><FiYoutube />
+
+                        <a
+                            href="https://www.youtube.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="YouTube"
+                        >
+                            <FiYoutube />
                         </a>
+
                     </div>
                 </div>
 
