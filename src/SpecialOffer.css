@@ -1,0 +1,646 @@
+.special-offer {
+    background: #f6fbf4;
+    padding: 5rem 5vw;
+    overflow: hidden;
+}
+
+.special-offer__header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.special-offer__header p {
+    color: #2f7d5a;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    margin: 0 0 0.7rem;
+}
+
+.special-offer__header h2 {
+    color: #163b2f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.special-offer__divider {
+    align-items: center;
+    display: grid;
+    gap: 0.7rem;
+    grid-template-columns: 1fr auto 1fr;
+    margin: 1.2rem auto 0;
+    max-width: 420px;
+}
+
+.special-offer__divider span {
+    border-top: 1px solid #1d5c3b;
+}
+
+.special-offer__divider b {
+    color: #5b9c4d;
+    font-size: 1rem;
+}
+
+.special-offer__content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.special-offer__image {
+    width: 480px;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 22px 0 0 22px;
+    box-shadow: 0 15px 40px rgba(29, 92, 59, 0.12);
+}
+
+.special-offer__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.special-offer__image:hover img {
+    transform: scale(1.05);
+}
+
+.special-offer__card {
+    background: #ffffff;
+    width: 420px;
+    min-height: 360px;
+
+    border-radius: 0 22px 22px 0;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: 0 15px 40px rgba(29, 92, 59, 0.12);
+
+    position: relative;
+}
+
+.special-offer__badge {
+    color: #5b9c4d;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.8rem;
+}
+
+.special-offer__card h3 {
+    color: #163b2f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+}
+
+.special-offer__description {
+    color: #60766c;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0 0 1.3rem;
+}
+
+.special-offer__price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.new-price {
+    color: #2f7d5a;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.old-price {
+    color: #9aa8a1;
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+.special-offer__button {
+    width: fit-content;
+
+    background: #2f7d5a;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 0.85rem 1.5rem;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.special-offer__button span {
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.special-offer__button:hover {
+    background: #163b2f;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   IMPORTANT - PREVENT WIDTH OVERFLOW
+========================================= */
+
+.special-offer,
+.special-offer * {
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   LARGE LAPTOP
+   1200px
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .special-offer {
+        padding: 4.5rem 4vw;
+    }
+
+    .special-offer__content {
+        max-width: 950px;
+    }
+
+    .special-offer__image {
+        width: 50%;
+        height: 350px;
+    }
+
+    .special-offer__card {
+        width: 50%;
+        min-height: 350px;
+        padding: 2.5rem;
+    }
+}
+
+
+/* =========================================
+   TABLET
+   992px
+========================================= */
+
+@media (max-width: 992px) {
+
+    .special-offer {
+        padding: 4rem 30px;
+    }
+
+    .special-offer__content {
+        width: 100%;
+        max-width: 850px;
+    }
+
+    .special-offer__image {
+        width: 50%;
+        height: 330px;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .special-offer__card {
+        width: 50%;
+        min-height: 330px;
+        padding: 2.2rem;
+        border-radius: 0 20px 20px 0;
+    }
+
+    .special-offer__badge {
+        font-size: 0.65rem;
+    }
+
+    .special-offer__card h3 {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
+    .special-offer__description {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .new-price {
+        font-size: 1.6rem;
+    }
+
+    .old-price {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* =========================================
+   SMALL TABLET
+   768px
+========================================= */
+
+@media (max-width: 768px) {
+
+    .special-offer {
+        padding: 3.5rem 25px;
+    }
+
+    .special-offer__header {
+        margin-bottom: 2.5rem;
+    }
+
+    .special-offer__header p {
+        font-size: 0.7rem;
+        letter-spacing: 0.15em;
+    }
+
+    .special-offer__header h2 {
+        font-size: 2.3rem;
+    }
+
+    .special-offer__content {
+        max-width: 700px;
+    }
+
+    .special-offer__image {
+        height: 300px;
+    }
+
+    .special-offer__card {
+        min-height: 300px;
+        padding: 2rem;
+    }
+
+    .special-offer__card h3 {
+        font-size: 1.45rem;
+    }
+
+    .special-offer__description {
+        font-size: 0.85rem;
+    }
+
+    .new-price {
+        font-size: 1.5rem;
+    }
+
+    .special-offer__button {
+        padding: 0.8rem 1.3rem;
+        font-size: 0.8rem;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   600px
+========================================= */
+
+@media (max-width: 600px) {
+
+    .special-offer {
+        width: 100%;
+        padding: 3rem 15px 3.5rem;
+    }
+
+    /* Heading */
+
+    .special-offer__header {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .special-offer__header p {
+        font-size: 0.62rem;
+        letter-spacing: 0.12em;
+        margin-bottom: 0.6rem;
+    }
+
+    .special-offer__header h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .special-offer__divider {
+        width: 100%;
+        max-width: 260px;
+        margin-top: 1rem;
+    }
+
+
+    /* Content */
+
+    .special-offer__content {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+
+    /* Image */
+
+    .special-offer__image {
+        width: 100%;
+        height: 250px;
+
+        flex-shrink: 0;
+
+        border-radius: 20px 20px 0 0;
+
+        box-shadow: 0 8px 25px rgba(29, 92, 59, 0.08);
+    }
+
+    .special-offer__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    /* Card */
+
+    .special-offer__card {
+        width: 100%;
+        min-height: auto;
+
+        padding: 2rem 1.5rem;
+
+        border-radius: 0 0 20px 20px;
+
+        box-shadow: 0 10px 30px rgba(29, 92, 59, 0.10);
+    }
+
+
+    /* Badge */
+
+    .special-offer__badge {
+        font-size: 0.62rem;
+        letter-spacing: 0.13em;
+
+        margin-bottom: 0.7rem;
+    }
+
+
+    /* Title */
+
+    .special-offer__card h3 {
+        font-size: 1.55rem;
+        line-height: 1.2;
+
+        margin-bottom: 0.9rem;
+    }
+
+
+    /* Description */
+
+    .special-offer__description {
+        font-size: 0.88rem;
+        line-height: 1.7;
+
+        margin-bottom: 1.2rem;
+    }
+
+
+    /* Price */
+
+    .special-offer__price {
+        gap: 0.8rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .new-price {
+        font-size: 1.55rem;
+    }
+
+    .old-price {
+        font-size: 0.85rem;
+    }
+
+
+    /* Button */
+
+    .special-offer__button {
+        width: 100%;
+
+        padding: 0.85rem 1rem;
+
+        font-size: 0.8rem;
+
+        text-align: center;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   480px
+========================================= */
+
+@media (max-width: 480px) {
+
+    .special-offer {
+        padding: 2.7rem 12px 3rem;
+    }
+
+    .special-offer__header {
+        margin-bottom: 1.8rem;
+    }
+
+    .special-offer__header p {
+        font-size: 0.58rem;
+        letter-spacing: 0.1em;
+    }
+
+    .special-offer__header h2 {
+        font-size: 1.8rem;
+    }
+
+    .special-offer__divider {
+        max-width: 230px;
+    }
+
+
+    /* Image */
+
+    .special-offer__image {
+        height: 225px;
+        border-radius: 18px 18px 0 0;
+    }
+
+
+    /* Card */
+
+    .special-offer__card {
+        padding: 1.7rem 1.3rem;
+        border-radius: 0 0 18px 18px;
+    }
+
+    .special-offer__badge {
+        font-size: 0.58rem;
+    }
+
+    .special-offer__card h3 {
+        font-size: 1.4rem;
+    }
+
+    .special-offer__description {
+        font-size: 0.82rem;
+        line-height: 1.6;
+    }
+
+    .new-price {
+        font-size: 1.45rem;
+    }
+
+    .old-price {
+        font-size: 0.8rem;
+    }
+
+    .special-offer__button {
+        padding: 0.8rem 1rem;
+        font-size: 0.76rem;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+   375px
+========================================= */
+
+@media (max-width: 375px) {
+
+    .special-offer {
+        padding: 2.3rem 10px 2.7rem;
+    }
+
+    .special-offer__header {
+        margin-bottom: 1.5rem;
+    }
+
+    .special-offer__header p {
+        font-size: 0.52rem;
+    }
+
+    .special-offer__header h2 {
+        font-size: 1.65rem;
+    }
+
+    .special-offer__divider {
+        max-width: 200px;
+        gap: 0.5rem;
+    }
+
+
+    /* Image */
+
+    .special-offer__image {
+        height: 205px;
+        border-radius: 16px 16px 0 0;
+    }
+
+
+    /* Card */
+
+    .special-offer__card {
+        padding: 1.5rem 1.1rem;
+        border-radius: 0 0 16px 16px;
+    }
+
+    .special-offer__badge {
+        font-size: 0.52rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .special-offer__card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .special-offer__description {
+        font-size: 0.78rem;
+        line-height: 1.55;
+        margin-bottom: 1rem;
+    }
+
+    .special-offer__price {
+        gap: 0.7rem;
+        margin-bottom: 1.1rem;
+    }
+
+    .new-price {
+        font-size: 1.35rem;
+    }
+
+    .old-price {
+        font-size: 0.75rem;
+    }
+
+    .special-offer__button {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 0.72rem;
+    }
+}
+
+
+/* =========================================
+   EXTRA SMALL PHONES
+   320px
+========================================= */
+
+@media (max-width: 320px) {
+
+    .special-offer {
+        padding: 2rem 8px 2.5rem;
+    }
+
+    .special-offer__header h2 {
+        font-size: 1.5rem;
+    }
+
+    .special-offer__image {
+        height: 185px;
+    }
+
+    .special-offer__card {
+        padding: 1.3rem 1rem;
+    }
+
+    .special-offer__card h3 {
+        font-size: 1.15rem;
+    }
+
+    .special-offer__description {
+        font-size: 0.74rem;
+    }
+
+    .new-price {
+        font-size: 1.25rem;
+    }
+
+    .special-offer__button {
+        font-size: 0.68rem;
+    }
+}

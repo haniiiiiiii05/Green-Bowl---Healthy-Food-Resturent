@@ -1,0 +1,531 @@
+/* =================================
+   MENU SECTION
+================================= */
+
+.menu-section {
+    background: #f6f7f3;
+    padding: 4rem 5vw 5rem;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.menu-header {
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+.menu-eyebrow {
+    color: #2f7d5a;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    margin: 0 0 0.6rem;
+    text-transform: uppercase;
+}
+
+.menu-header h2 {
+    color: #163b2f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 400;
+    margin: 0;
+}
+
+
+/* =================================
+   DIVIDER
+================================= */
+
+.menu-divider {
+    align-items: center;
+    display: grid;
+    gap: 0.7rem;
+    grid-template-columns: 1fr auto 1fr;
+    margin: 1.2rem auto 1.8rem;
+    max-width: 420px;
+}
+
+.menu-divider span {
+    border-top: 1px solid #1d5c3b;
+}
+
+.menu-divider b {
+    color: #5b9c4d;
+    font-size: 1rem;
+}
+
+
+/* =================================
+   CATEGORY BUTTONS
+================================= */
+
+.menu-categories {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    justify-content: center;
+    margin: 0 auto 2.5rem;
+}
+
+.menu-category {
+    background: transparent;
+    border: 1px solid rgba(29, 92, 59, 0.35);
+    border-radius: 999px;
+    color: #1d5c3b;
+    cursor: pointer;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.65rem 1.3rem;
+    transition: all 0.25s ease;
+}
+
+.menu-category:hover {
+    background: #edf7ea;
+    border-color: #2f7d5a;
+}
+
+.menu-category.active {
+    background: #2f7d5a;
+    border-color: #2f7d5a;
+    color: white;
+}
+
+
+/* =================================
+   MENU GRID
+================================= */
+
+.menu-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+
+/* =================================
+   MENU CARD
+================================= */
+
+.menu-card {
+    background: #ffffff;
+    border: 1px solid rgba(29, 92, 59, 0.12);
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(29, 92, 59, 0.08);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.menu-card:hover {
+    box-shadow: 0 14px 30px rgba(29, 92, 59, 0.14);
+    transform: translateY(-5px);
+}
+
+
+/* =================================
+   IMAGE
+================================= */
+
+.menu-image-wrapper {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu-image {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    width: 100%;
+}
+
+.menu-card:hover .menu-image {
+    transform: scale(1.05);
+}
+
+
+/* =================================
+   CATEGORY LABEL
+================================= */
+
+.menu-category-label {
+    background: #edf7ea;
+    border-radius: 999px;
+    bottom: 12px;
+    color: #2f7d5a;
+    font-size: 0.65rem;
+    font-weight: 800;
+    left: 12px;
+    padding: 0.4rem 0.7rem;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+
+/* =================================
+   CARD BODY
+================================= */
+
+.menu-card-body {
+    padding: 1.2rem;
+}
+
+.menu-card-body h3 {
+    color: #163b2f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.25rem;
+    margin: 0 0 0.45rem;
+}
+
+.menu-card-body p {
+    color: #60766c;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin: 0 0 1rem;
+    min-height: 42px;
+}
+
+
+/* =================================
+   PRICE + CART
+================================= */
+
+.menu-card-bottom {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.6rem;
+}
+
+.menu-price {
+    color: #2f7d5a;
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+.menu-cart-btn {
+    align-items: center;
+    background: #2f7d5a;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.7rem;
+    font-weight: 700;
+    gap: 0.4rem;
+    padding: 0.65rem 0.85rem;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.menu-cart-btn:hover {
+    background: #256d4d;
+    transform: translateY(-1px);
+}
+
+.menu-cart-btn svg {
+    font-size: 0.85rem;
+}
+
+/* =================================
+   LARGE LAPTOP
+================================= */
+
+@media (max-width: 1200px) {
+
+    .menu-section {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    .menu-grid {
+        max-width: 1000px;
+        gap: 1.3rem;
+    }
+
+    .menu-image-wrapper {
+        height: 210px;
+    }
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .menu-section {
+        padding: 3.5rem 30px 4rem;
+    }
+
+    .menu-header {
+        max-width: 650px;
+    }
+
+    .menu-header h2 {
+        font-size: 2.3rem;
+    }
+
+    .menu-categories {
+        margin-bottom: 2rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 720px;
+        gap: 1.3rem;
+    }
+
+    .menu-image-wrapper {
+        height: 210px;
+    }
+
+    .menu-card-body {
+        padding: 1rem;
+    }
+
+    .menu-card-body h3 {
+        font-size: 1.15rem;
+    }
+
+    .menu-card-body p {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+    .menu-section {
+        padding: 2.8rem 20px 3.5rem;
+    }
+
+    .menu-eyebrow {
+        font-size: 0.65rem;
+        letter-spacing: 0.13em;
+    }
+
+    .menu-header h2 {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    .menu-divider {
+        width: 90%;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* CATEGORY BUTTONS */
+
+    .menu-categories {
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .menu-category {
+        font-size: 0.7rem;
+        padding: 0.55rem 1rem;
+    }
+
+    /* CARDS */
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 430px;
+    }
+
+    .menu-card {
+        border-radius: 14px;
+    }
+
+    .menu-image-wrapper {
+        height: 230px;
+    }
+
+    .menu-card-body {
+        padding: 1rem;
+    }
+
+    .menu-card-body h3 {
+        font-size: 1.15rem;
+    }
+
+    .menu-card-body p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        /* min-height: auto; */
+    }
+
+    .menu-price {
+        font-size: 1.1rem;
+    }
+
+    .menu-cart-btn {
+        font-size: 0.68rem;
+        padding: 0.65rem 0.8rem;
+    }
+}
+
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 480px) {
+
+    .menu-section {
+        padding: 2.5rem 15px 3rem;
+    }
+
+    .menu-eyebrow {
+        font-size: 0.6rem;
+        letter-spacing: 0.11em;
+    }
+
+    .menu-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .menu-divider {
+        width: 95%;
+        gap: 0.5rem;
+    }
+
+    /* CATEGORY BUTTONS */
+
+    .menu-categories {
+        gap: 0.4rem;
+    }
+
+    .menu-category {
+        font-size: 0.65rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    /* CARD */
+
+    .menu-grid {
+        width: 100%;
+        max-width: 100%;
+        gap: 1.3rem;
+    }
+
+    .menu-image-wrapper {
+        height: 210px;
+    }
+
+    .menu-card-body {
+        padding: 0.9rem;
+    }
+
+    .menu-card-body h3 {
+        font-size: 1.08rem;
+    }
+
+    .menu-card-body p {
+        font-size: 0.82rem;
+    }
+
+    .menu-price {
+        font-size: 1.05rem;
+    }
+
+    .menu-cart-btn {
+        font-size: 0.64rem;
+        padding: 0.6rem 0.75rem;
+    }
+
+    .menu-category-label {
+        bottom: 10px;
+        left: 10px;
+        font-size: 0.58rem;
+        padding: 0.35rem 0.6rem;
+    }
+}
+
+
+/* =================================
+   EXTRA SMALL MOBILE
+================================= */
+
+@media (max-width: 375px) {
+
+    .menu-section {
+        padding: 2.2rem 12px 2.7rem;
+    }
+
+    .menu-eyebrow {
+        font-size: 0.56rem;
+        letter-spacing: 0.09em;
+    }
+
+    .menu-header h2 {
+        font-size: 1.65rem;
+        line-height: 1.15;
+    }
+
+    .menu-divider {
+        margin-bottom: 1.3rem;
+    }
+
+    /* CATEGORY BUTTONS */
+
+    .menu-categories {
+        gap: 0.35rem;
+    }
+
+    .menu-category {
+        font-size: 0.58rem;
+        padding: 0.45rem 0.65rem;
+    }
+
+    /* CARD */
+
+    .menu-grid {
+        gap: 1.1rem;
+    }
+
+    .menu-image-wrapper {
+        height: 190px;
+    }
+
+    .menu-card-body {
+        padding: 0.8rem;
+    }
+
+    .menu-card-body h3 {
+        font-size: 1rem;
+    }
+
+    .menu-card-body p {
+        font-size: 0.78rem;
+        line-height: 1.45;
+    }
+
+    .menu-price {
+        font-size: 1rem;
+    }
+
+    .menu-cart-btn {
+        font-size: 0.58rem;
+        padding: 0.55rem 0.65rem;
+    }
+
+    .menu-cart-btn svg {
+        font-size: 0.75rem;
+    }
+}

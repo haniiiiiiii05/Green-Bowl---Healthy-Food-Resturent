@@ -1,0 +1,651 @@
+.contact {
+    background: #f6fbf4;
+    padding: 5rem 5vw 5.5rem;
+    overflow: hidden;
+}
+
+.contact__header {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.contact__eyebrow {
+    color: #2f7d5a;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    margin: 0 0 0.7rem;
+    text-transform: uppercase;
+}
+
+.contact__header h2 {
+    color: #163b2f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.contact__divider {
+    align-items: center;
+    display: grid;
+    gap: 0.7rem;
+    grid-template-columns: 1fr auto 1fr;
+    margin: 1.2rem auto 0;
+    max-width: 420px;
+}
+
+.contact__divider span {
+    border-top: 1px solid #1d5c3b;
+}
+
+.contact__divider b {
+    color: #5b9c4d;
+    font-size: 1rem;
+}
+
+.contact__content {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.contact__info {
+    background: #ffffff;
+
+    border: 1px solid rgba(29, 92, 59, 0.12);
+    border-radius: 22px;
+
+    padding: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow:
+        0 12px 35px rgba(29, 92, 59, 0.08);
+}
+
+.contact__info-item {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 1.2rem;
+
+    padding: 1.3rem 0;
+
+    border-bottom: 1px solid #edf2ee;
+}
+
+.contact__info-item:first-child {
+    padding-top: 0;
+}
+
+.contact__info-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.contact__icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #edf7ea;
+
+    border-radius: 50%;
+
+    font-size: 1.15rem;
+}
+
+.contact__info-item h3 {
+    color: #163b2f;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.15rem;
+    font-weight: 600;
+
+    margin: 0 0 0.4rem;
+}
+
+.contact__info-item p {
+    color: #60766c;
+
+    font-size: 0.9rem;
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+
+    padding: 1.3rem 0;
+
+    border-bottom: none;
+}
+
+.contact-item .contact-icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #edf7ea;
+
+    border-radius: 50%;
+
+    font-size: 1.15rem;
+}
+
+.contact-item h4 {
+    color: #163b2f;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.15rem;
+    font-weight: 600;
+
+    margin: 0 0 0.4rem;
+}
+
+.contact-item p {
+    color: #60766c;
+
+    font-size: 0.9rem;
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+.contact__form-box {
+    background: #ffffff;
+
+    border: 1px solid rgba(29, 92, 59, 0.12);
+    border-radius: 22px;
+
+    padding: 2.5rem;
+
+    box-shadow:
+        0 12px 35px rgba(29, 92, 59, 0.08);
+}
+
+.contact__form-box>h3 {
+    color: #163b2f;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 1.45rem;
+    font-weight: 600;
+
+    margin: 0 0 1.8rem;
+}
+
+.contact__field {
+    margin-bottom: 1.2rem;
+}
+
+.contact__field label {
+    display: block;
+
+    color: #163b2f;
+
+    font-size: 0.82rem;
+    font-weight: 700;
+
+    margin-bottom: 0.45rem;
+}
+
+.contact__field input,
+.contact__field textarea {
+    width: 100%;
+
+    background: #f8fbf7;
+
+    border: 1px solid #dce8df;
+    border-radius: 10px;
+
+    color: #163b2f;
+
+    font-family: inherit;
+    font-size: 0.88rem;
+
+    padding: 0.8rem 0.9rem;
+
+    outline: none;
+
+    transition: all 0.25s ease;
+}
+
+.contact__field textarea {
+    resize: vertical;
+    min-height: 105px;
+}
+
+.contact__field input::placeholder,
+.contact__field textarea::placeholder {
+    color: #9aa8a1;
+}
+
+.contact__field input:focus,
+.contact__field textarea:focus {
+    border-color: #5b9c4d;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(91, 156, 77, 0.1);
+}
+
+.contact__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    width: fit-content;
+
+    background: #2f7d5a;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 0.9rem 1.6rem;
+
+    font-size: 0.8rem;
+    font-weight: 800;
+
+    letter-spacing: 0.04em;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.contact__button span {
+    font-size: 1rem;
+}
+
+.contact__button:hover {
+    background: #163b2f;
+    transform: translateY(-2px);
+}
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+    .contact {
+        padding: 4rem 30px 4.5rem;
+    }
+
+    .contact__content {
+        max-width: 750px;
+
+        grid-template-columns: 1fr 1.1fr;
+
+        gap: 1.3rem;
+    }
+
+    .contact__info {
+        padding: 2rem;
+    }
+
+    .contact__form-box {
+        padding: 2rem;
+    }
+
+    .contact__info-item {
+        gap: 0.9rem;
+    }
+
+    .contact__icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+
+    .contact__info-item h3 {
+        font-size: 1.05rem;
+    }
+
+    .contact__info-item p {
+        font-size: 0.82rem;
+    }
+
+    .contact-item {
+        gap: 0.9rem;
+        padding: 1rem 0;
+    }
+
+    .contact-item .contact-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+
+    .contact-item h4 {
+        font-size: 1.05rem;
+    }
+
+    .contact-item p {
+        font-size: 0.82rem;
+    }
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+    .contact {
+        padding: 3rem 15px 3.5rem;
+    }
+
+
+    /* Header */
+
+    .contact__header {
+        margin-bottom: 2rem;
+    }
+
+    .contact__eyebrow {
+        font-size: 0.65rem;
+        letter-spacing: 0.13em;
+    }
+
+    .contact__header h2 {
+        font-size: 2rem;
+    }
+
+    .contact__divider {
+        max-width: 280px;
+    }
+
+
+    /* Content */
+
+    .contact__content {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 1rem;
+    }
+
+
+    /* Information */
+
+    .contact__info {
+        width: 100%;
+
+        padding: 1.5rem;
+
+        border-radius: 18px;
+    }
+
+    .contact__info-item {
+        padding: 1rem 0;
+        gap: 0.9rem;
+    }
+
+    .contact__icon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 1rem;
+    }
+
+    .contact__info-item h3 {
+        font-size: 1rem;
+    }
+
+    .contact__info-item p {
+        font-size: 0.82rem;
+    }
+
+    .contact-item {
+        gap: 0.9rem;
+        padding: 1rem 0;
+    }
+
+    .contact-item .contact-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .contact-item h4 {
+        font-size: 1rem;
+    }
+
+    .contact-item p {
+        font-size: 0.82rem;
+        line-height: 1.55;
+    }
+
+
+    /* Form */
+
+    .contact__form-box {
+        width: 100%;
+
+        padding: 1.5rem;
+
+        border-radius: 18px;
+    }
+
+    .contact__form-box>h3 {
+        font-size: 1.3rem;
+
+        margin-bottom: 1.4rem;
+    }
+
+    .contact__field {
+        margin-bottom: 1rem;
+    }
+
+    .contact__field label {
+        font-size: 0.78rem;
+    }
+
+    .contact__field input,
+    .contact__field textarea {
+        font-size: 0.84rem;
+        padding: 0.75rem 0.8rem;
+    }
+
+    .contact__field textarea {
+        min-height: 100px;
+    }
+
+
+    /* Button */
+
+    .contact__button {
+        width: 100%;
+
+        padding: 0.85rem;
+
+        font-size: 0.76rem;
+    }
+}
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 480px) {
+
+    .contact {
+        padding: 2.7rem 12px 3rem;
+    }
+
+    .contact__header h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact__eyebrow {
+        font-size: 0.58rem;
+    }
+
+    .contact__divider {
+        max-width: 230px;
+    }
+
+    .contact__info {
+        padding: 1.3rem;
+        border-radius: 16px;
+    }
+
+    .contact__form-box {
+        padding: 1.3rem;
+        border-radius: 16px;
+    }
+
+    .contact__info-item {
+        gap: 0.75rem;
+    }
+
+    .contact__icon {
+        width: 38px;
+        height: 38px;
+        font-size: 0.9rem;
+    }
+
+    .contact__info-item h3 {
+        font-size: 0.95rem;
+    }
+
+    .contact__info-item p {
+        font-size: 0.78rem;
+    }
+
+    .contact__form-box>h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-item {
+        gap: 0.75rem;
+        padding: 1rem 0;
+    }
+
+    .contact-item .contact-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 0.9rem;
+    }
+
+    .contact-item h4 {
+        font-size: 0.95rem;
+    }
+
+    .contact-item p {
+        font-size: 0.78rem;
+    }
+}
+
+/* =================================
+   VERY SMALL MOBILE
+================================= */
+
+@media (max-width: 375px) {
+
+    .contact {
+        padding: 2.3rem 10px 2.7rem;
+    }
+
+    .contact__header h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact__eyebrow {
+        font-size: 0.52rem;
+        letter-spacing: 0.1em;
+    }
+
+    .contact__divider {
+        max-width: 200px;
+    }
+
+    .contact__info {
+        padding: 1.1rem;
+    }
+
+    .contact__form-box {
+        padding: 1.1rem;
+    }
+
+    .contact__icon {
+        width: 36px;
+        height: 36px;
+        font-size: 0.85rem;
+    }
+
+    .contact__info-item h3 {
+        font-size: 0.9rem;
+    }
+
+    .contact__info-item p {
+        font-size: 0.74rem;
+    }
+
+    .contact-item {
+        gap: 0.7rem;
+        padding: 0.9rem 0;
+    }
+
+    .contact-item .contact-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 0.85rem;
+    }
+
+    .contact-item h4 {
+        font-size: 0.9rem;
+    }
+
+    .contact-item p {
+        font-size: 0.74rem;
+    }
+
+    .contact__form-box>h3 {
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .contact__field input,
+    .contact__field textarea {
+        font-size: 0.78rem;
+    }
+
+    .contact__button {
+        font-size: 0.7rem;
+    }
+
+}

@@ -1,0 +1,279 @@
+.choose {
+    background: #f3f2ef;
+    padding: 3.25rem 5vw 4.25rem;
+}
+
+.choose__header {
+    margin: 0 auto 1.8rem;
+    max-width: 780px;
+    text-align: center;
+}
+
+.choose__eyebrow {
+    color: #2f7d5a;
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    margin: 0 0 0.7rem;
+    text-transform: uppercase;
+}
+
+.choose__header h2 {
+    color: #163b2f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.9rem, 2.5vw, 2.6rem);
+    margin: 0;
+    text-align: center;
+}
+
+.choose__grid {
+    border: 2px solid rgba(29, 92, 59, 0.95);
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin: 0 auto;
+    max-width: 960px;
+    grid-auto-flow: row;
+}
+
+.choose__item {
+    align-items: center;
+    background: #f9fbf8;
+    border: 1px solid rgba(29, 92, 59, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 180px;
+    padding: 1rem 0.9rem;
+    position: relative;
+}
+
+.choose__item:not(:last-child) {
+    box-shadow: none;
+}
+
+.choose__icon {
+    align-items: center;
+    display: flex;
+    font-size: 2.1rem;
+    height: 48px;
+    justify-content: center;
+    margin-bottom: 0.7rem;
+    line-height: 1;
+}
+
+.choose__title {
+    color: #163b2f;
+    display: grid;
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 0.08rem;
+    line-height: 1.28;
+    text-align: center;
+}
+
+.choose__line {
+    display: block;
+}
+
+/* ================================
+   LARGE LAPTOP
+================================ */
+
+@media (max-width: 1200px) {
+
+    .choose {
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    .choose__grid {
+        max-width: 900px;
+    }
+
+    .choose__item {
+        min-height: 170px;
+    }
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+    .choose {
+        padding: 3rem 30px 3.5rem;
+    }
+
+    .choose__header {
+        max-width: 650px;
+        margin-bottom: 1.6rem;
+    }
+
+    .choose__eyebrow {
+        font-size: 0.72rem;
+    }
+
+    .choose__header h2 {
+        font-size: clamp(1.8rem, 4vw, 2.4rem);
+        line-height: 1.2;
+    }
+
+    .choose__grid {
+        max-width: 700px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .choose__item {
+        min-height: 160px;
+        padding: 1rem;
+    }
+
+    .choose__icon {
+        font-size: 2rem;
+    }
+
+    .choose__title {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .choose {
+        padding: 2.5rem 20px 3rem;
+    }
+
+    .choose__header {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .choose__eyebrow {
+        font-size: 0.65rem;
+        letter-spacing: 0.13em;
+        margin-bottom: 0.6rem;
+    }
+
+    .choose__header h2 {
+        font-size: clamp(1.75rem, 7vw, 2.2rem);
+        line-height: 1.15;
+    }
+
+    .choose__grid {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        border-width: 2px;
+    }
+
+    .choose__item {
+        min-height: 145px;
+        padding: 0.8rem 0.5rem;
+    }
+
+    .choose__icon {
+        font-size: 1.8rem;
+        height: 42px;
+        margin-bottom: 0.55rem;
+    }
+
+    .choose__title {
+        font-size: 0.85rem;
+        line-height: 1.25;
+    }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+    .choose {
+        padding: 2.2rem 15px 2.7rem;
+    }
+
+    .choose__eyebrow {
+        font-size: 0.6rem;
+        letter-spacing: 0.11em;
+    }
+
+    .choose__header h2 {
+        font-size: 1.8rem;
+        line-height: 1.18;
+    }
+
+    .choose__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .choose__item {
+        min-height: 135px;
+        padding: 0.7rem 0.35rem;
+    }
+
+    .choose__icon {
+        font-size: 1.65rem;
+        height: 38px;
+        margin-bottom: 0.45rem;
+    }
+
+    .choose__title {
+        font-size: 0.78rem;
+        line-height: 1.2;
+    }
+}
+
+
+/* ================================
+   EXTRA SMALL MOBILE
+================================ */
+
+@media (max-width: 375px) {
+
+    .choose {
+        padding: 2rem 12px 2.5rem;
+    }
+
+    .choose__eyebrow {
+        font-size: 0.56rem;
+        letter-spacing: 0.09em;
+    }
+
+    .choose__header h2 {
+        font-size: 1.65rem;
+        line-height: 1.15;
+    }
+
+    .choose__header {
+        margin-bottom: 1.3rem;
+    }
+
+    .choose__grid {
+        width: 100%;
+    }
+
+    .choose__item {
+        min-height: 125px;
+        padding: 0.6rem 0.25rem;
+    }
+
+    .choose__icon {
+        font-size: 1.5rem;
+        height: 34px;
+        margin-bottom: 0.4rem;
+    }
+
+    .choose__title {
+        font-size: 0.72rem;
+        line-height: 1.18;
+    }
+}

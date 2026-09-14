@@ -1,0 +1,373 @@
+/* ==============================
+   LEARN MORE PAGE
+============================== */
+
+.learn-more {
+    background: #f6fbf4;
+    color: #163b2f;
+}
+
+
+/* ==============================
+   HERO
+============================== */
+
+.learn-more__hero {
+    text-align: center;
+    padding: 6rem 5vw 4rem;
+
+    background:
+        linear-gradient(135deg,
+            #fffdf9 0%,
+            #f5f1e8 50%,
+            #edf5ee 100%);
+}
+
+.learn-more__hero>p:first-child {
+    margin: 0 0 0.8rem;
+
+    color: #2e7d32;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.learn-more__hero h1 {
+    margin: 0;
+
+    color: #163b2f;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3.2rem;
+    line-height: 1.15;
+    font-weight: 600;
+}
+
+.learn-more__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+}
+
+.learn-more__divider span {
+    width: 45px;
+    height: 1px;
+    background: #9bbb91;
+}
+
+.learn-more__divider b {
+    color: #2e7d32;
+    font-size: 1rem;
+}
+
+.learn-more__intro {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #60766c;
+
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   OUR STORY
+============================== */
+
+.learn-more__section {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    padding: 5rem 5vw;
+
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 4rem;
+
+    align-items: center;
+}
+
+.learn-more__small-title {
+    margin: 0 0 0.7rem;
+
+    color: #2e7d32;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.learn-more__text h2,
+.learn-more__philosophy h2,
+.learn-more__why h2 {
+    margin: 0 0 1.2rem;
+
+    color: #163b2f;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.learn-more__text p:not(.learn-more__small-title) {
+    margin-bottom: 1rem;
+
+    color: #60766c;
+
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   FRESH & HEALTHY BOX
+============================== */
+
+.learn-more__box {
+    padding: 2.5rem 2rem;
+
+    background: #ffffff;
+
+    border: 1px solid #dcebd9;
+    border-radius: 22px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(22, 59, 47, 0.07);
+}
+
+.learn-more__box span {
+    font-size: 3.2rem;
+}
+
+.learn-more__box h3 {
+    margin: 1rem 0 0.6rem;
+
+    color: #163b2f;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.3rem;
+}
+
+.learn-more__box p {
+    margin: 0;
+
+    color: #60766c;
+
+    font-size: 0.88rem;
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   PHILOSOPHY
+============================== */
+
+.learn-more__philosophy {
+    padding: 5rem 5vw;
+
+    background: #edf5ee;
+
+    text-align: center;
+}
+
+.learn-more__philosophy>p:not(.learn-more__small-title) {
+    max-width: 680px;
+    margin: 0 auto;
+
+    color: #60766c;
+
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   FEATURES
+============================== */
+
+.learn-more__features {
+    max-width: 1000px;
+    margin: 3rem auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.learn-more__features>div {
+    padding: 2rem 1.5rem;
+
+    background: #ffffff;
+
+    border: 1px solid #dcebd9;
+    border-radius: 18px;
+}
+
+.learn-more__features span {
+    font-size: 2rem;
+}
+
+.learn-more__features h3 {
+    margin: 1rem 0 0.6rem;
+
+    color: #163b2f;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.15rem;
+}
+
+.learn-more__features p {
+    margin: 0;
+
+    color: #60766c;
+
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   WHY GREEN BOWL
+============================== */
+
+.learn-more__why {
+    max-width: 750px;
+    margin: 0 auto;
+
+    padding: 5rem 5vw;
+
+    text-align: center;
+}
+
+.learn-more__why>p:not(.learn-more__small-title) {
+    margin: 0 auto 1.8rem;
+
+    color: #60766c;
+
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+.learn-more__why button {
+    padding: 0.85rem 1.6rem;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2e7d32;
+    color: #ffffff;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.learn-more__why button span {
+    margin-left: 0.6rem;
+}
+
+.learn-more__why button:hover {
+    background: #1b5e20;
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 900px) {
+
+    .learn-more__hero {
+        padding: 5rem 5vw 3.5rem;
+    }
+
+    .learn-more__hero h1 {
+        font-size: 2.7rem;
+    }
+
+    .learn-more__section {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .learn-more__box {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .learn-more__features {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 600px) {
+
+    .learn-more__hero {
+        padding: 4rem 1.5rem 3rem;
+    }
+
+    .learn-more__hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .learn-more__intro {
+        font-size: 0.88rem;
+    }
+
+    .learn-more__section {
+        padding: 4rem 1.5rem;
+    }
+
+    .learn-more__text h2,
+    .learn-more__philosophy h2,
+    .learn-more__why h2 {
+        font-size: 1.9rem;
+    }
+
+    .learn-more__philosophy {
+        padding: 4rem 1.5rem;
+    }
+
+    .learn-more__why {
+        padding: 4rem 1.5rem;
+    }
+}
+
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media (max-width: 400px) {
+
+    .learn-more__hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .learn-more__text h2,
+    .learn-more__philosophy h2,
+    .learn-more__why h2 {
+        font-size: 1.7rem;
+    }
+
+    .learn-more__box {
+        padding: 2rem 1.3rem;
+    }
+}
