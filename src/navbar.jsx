@@ -12,15 +12,21 @@ const Navbar = ({ cartCount = 0 }) => {
     return (
         <BootstrapNavbar expand="lg" className="site-navbar">
             <Container className="site-navbar__container">
-                <img src={logo} alt="Green Bowl logo" className="site-navbar__logo" />
-                <BootstrapNavbar.Toggle
+                <Link to="/">
+                    <img
+                        src={logo}
+                        alt="Green Bowl logo"
+                        className="site-navbar__logo"
+                    />
+                </Link>                <BootstrapNavbar.Toggle
                     aria-controls="basic-navbar-nav"
                     className="site-navbar__toggle"
                 />
                 <BootstrapNavbar.Collapse id="basic-navbar-nav">
                     <Nav className="site-navbar__nav ms-auto">
-                        <Nav.Link as={Link} to="/#home" className="site-navbar__home-link">Home</Nav.Link>
-
+                        <Nav.Link as={Link} to="/" className="site-navbar__home-link">
+                            Home
+                        </Nav.Link>
                         <div className="site-navbar__menu-item">
                             <Link to="/#about" className="site-navbar__trigger">
                                 <span>About</span>
